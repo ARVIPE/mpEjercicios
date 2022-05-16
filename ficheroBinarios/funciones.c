@@ -88,7 +88,7 @@ int contarRegistros(char * nF){
     double nbytes = ftell(fich);
     int tam = nbytes/sizeof(struct actor);
     fclose(fich);
-    return tam;
+    return tam; 
 }
 
 void borrarActor(char *nF, char * nombre){
