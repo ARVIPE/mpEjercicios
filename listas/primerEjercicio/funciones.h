@@ -15,5 +15,8 @@ int buscarElemento(struct nodo** cabeza, int dato);
 int contarElementos(struct nodo** cabeza);
 int calcularMedia(struct nodo** cabeza);
 void borrarElemento(struct nodo ** cabeza, int dato);
+void vector(int dato, int tam);
+void volcarVector(struct nodo * cabeza, int tam);
+
 
 #endif

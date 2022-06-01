@@ -23,6 +23,5 @@ int main(){
     printf("La media es de %i\n", media);
     borrarElemento(&cabeza, 3);
     mostrarLista(cabeza);
-    
-
+    volcarVector(cabeza, contador-1);
 }

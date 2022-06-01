@@ -93,20 +93,31 @@ void borrarElemento(struct nodo ** cabeza, int dato){
     if(aux!=NULL){
         if(aux==(*cabeza)){
             (*cabeza)=(*cabeza)->sig;
-        }else{
+        }else{  
             ant->sig=aux->sig;
         }
         free(aux);
     }
 }
 
-void volcarVector(struct nodo * cabeza){
+void volcarVector(struct nodo * cabeza, int tam){
     struct nodo * aux = cabeza;
     struct vector * desp;
+    int v[tam];
+    int i = 0;
 
     while(aux!=NULL){
-
+        v[i]=aux->dato;
         aux=aux->sig;
+        i++; 
     }
+
+    for(int i = 0; i < tam; i++){
+        printf("%i,", v[i]);
+    }
+
     
 }
+
+
+
